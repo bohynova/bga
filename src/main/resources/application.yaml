@@ -1,0 +1,19 @@
+server.port: 8089
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bga?currentSchema=bga
+    username: admin
+    password: admin
+    driverClassName: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    database: postgresql
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  application:
+    name: bga
+
+jwt:
+  secret: HIA2345nfw34t!1w3
+  expiration: 30m
